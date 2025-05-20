@@ -10,7 +10,7 @@ def area(x: 0, y: 0, z: 0)
 end
 
 args1 = {x: 2, y: 3, z: 4}
-p area(args1)
+p area(**args1) # ** を使ってハッシュをキーワード引数に展開
 
 args2 = {x: 2, z: 3} # omit y
-p area(args2)
+p area(**args2)
