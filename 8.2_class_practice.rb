@@ -36,12 +36,14 @@ class Receipt
     end
 end
 
+# create instance & define instance variable
 r = Receipt.new("ストアA")
 r.lines = [{name: "卵", price: 200, num: 1},
            {name: "大根", price: 100, num: 2}]
-r.output
+r.output # => output the contents in above "lines" according to defined output method
 p r.name # => "ストアA"
 
+# another instance
 r2 = Receipt.new("ストアB")
 r2.name = "ストアB"
 p r2.name # => "ストアB"
