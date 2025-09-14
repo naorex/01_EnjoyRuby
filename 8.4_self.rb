@@ -12,7 +12,7 @@ class Receipt
 
     def replace_name
         name = "new_name"      # input to local variable
-        self.name = "new name" # call method "name="
+        self.name = "new name" # call a method of "name="
     end
 
 end
